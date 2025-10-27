@@ -1,0 +1,33 @@
+* {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.main_div {
+    background-color: #f8b81f;
+}
+
+.next {
+    background-color: #f8b81f;
+    justify-content: flex-end;
+}
+
+.logo {
+    margin: 30px !important;
+}
+
+.di {
+    background-color: #f8b81f;
+}
+
+.next h2 {
+    color: #000;
+    margin-right: 50px !important;
+    margin-top: 25px !important;
+    margin-left: 20px !important;
+}
+
+.phone {
+    font-size: 25px;
+    margin-top: 35px !important;
+}

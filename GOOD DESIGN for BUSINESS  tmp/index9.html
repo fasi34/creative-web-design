@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expanding Search Bar with Categories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #eaf6fd;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    
+    .search-container {
+        position: relative;
+        width: 300px;
+        transition: width 0.3s ease-in-out;
+    }
+    
+    .search-container.active {
+        width: 600px;
+        /* Expanded width */
+    }
+    
+    .search-box {
+        display: flex;
+        align-items: center;
+        background: white;
+        border-radius: 30px;
+        padding: 10px 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+    
+    .search-box input {
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+    }
+    /* Search button */
+    
+    .search-btn {
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    /* Hidden category dropdown inside search box */
+    
+    .category-container {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #d9f0ff;
+        border-radius: 0 0 15px 15px;
+        padding: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        max-height: 200px;
+        overflow-y: auto;
+    }
+    /* Show categories when search box is active */
+    
+    .search-container.active .category-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .category {
+        background: white;
+        padding: 8px 15px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background 0.3s;
+    }
+    
+    .category:hover {
+        background: #cce7ff;
+    }
+</style>
+
+<body>
+
+    <div class="search-container" onclick="expandSearch()">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Enter industry or company name..." onkeyup="filterTags()">
+            <button class="search-btn">🔍</button>
+        </div>
+
+        <div class="category-container" id="categoryContainer">
+            <span class="category" onclick="setSearch('Aerospace')">Aerospace</span>
+            <span class="category" onclick="setSearch('Agriculture')">Agriculture</span>
+            <span class="category" onclick="setSearch('Apparel')">Apparel</span>
+            <span class="category" onclick="setSearch('Automotive')">Automotive</span>
+            <span class="category" onclick="setSearch('Bars & Restaurants')">Bars & Restaurants</span>
+            <span class="category" onclick="setSearch('Beauty & Cosmetics')">Beauty & Cosmetics</span>
+            <span class="category" onclick="setSearch('Business Services')">Business Services</span>
+            <span class="category" onclick="setSearch('Construction')">Construction</span>
+            <span class="category" onclick="setSearch('Education')">Education</span>
+            <span class="category" onclick="setSearch('Entertainment')">Entertainment</span>
+        </div>
+    </div>
+
+    <script>
+        // Function to expand search bar and show categories
+        function expandSearch() {
+            let container = document.querySelector('.search-container');
+            container.classList.add('active');
+        }
+
+        // Function to set search bar value when clicking on a category
+        function setSearch(value) {
+            document.getElementById('searchInput').value = value;
+            document.querySelector('.search-container').classList.remove('active');
+        }
+
+        // Function to filter category tags dynamically
+        function filterTags() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let categories = document.querySelectorAll('.category');
+
+            categories.forEach(category => {
+                if (category.innerText.toLowerCase().includes(input)) {
+                    category.style.display = 'inline-block';
+                } else {
+                    category.style.display = 'none';
+                }
+            });
+        }
+
+        // Hide dropdown and shrink search bar when clicking outside
+        document.addEventListener('click', function(event) {
+            let container = document.querySelector('.search-container');
+            if (!container.contains(event.target)) {
+                container.classList.remove('active');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1440 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand_logo h2 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.brand_logo {
+    border: 1px solid transparent;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    font-size: 20px;
+    color: #F3815D;
+    margin-top: 10px;
+    padding: 0 2px;
+    margin-left: 150px;
+}
+
+.square {
+    font-size: 20px;
+    color: #1AAEC8;
+    padding: 0 2px;
+    margin-top: 10px;
+    margin-right: 3px;
+}
+
+.nav-item:hover {
+    background-color: #17A3D6;
+    transition: ease 0.4s;
+    color: #fff;
+}
+
+.nav-item:hover .nav-link {
+    color: #fff;
+    transition: ease 0.4s;
+}
+
+.nav-item {
+    padding: 15px 0px;
+    border: 1px solid transparent;
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 15px 15px !important;
+}
+
+.text,
+.text1,
+.text2,
+.text3 {
+    position: relative;
+}
+
+.text2::before {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 100%;
+    bottom: 0;
+    right: 0px;
+    background: #1180B7;
+    transition: ease 0.4s;
+}
+
+.text2:hover:before {
+    position: absolute;
+    content: "";
+    transition: ease 0.4s;
+    height: 12px;
+    width: 100%;
+    opacity: 1;
+    bottom: 0;
+    right: 0px;
+    background: #1180B7;
+}
+
+.blog {
+    height: 30px;
+    margin-top: 28px;
+    text-align: center;
+    line-height: 1;
+    margin-left: 20px;
+    background-color: #F3815D;
+    border: 1px solid transparent;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.blog:hover,
+.blog:focus {
+    color: #fff !important;
+    background-color: #F3815D !important;
+    border: 1px solid transparent !important;
+}
+
+.search_bar {
+    border: 1px solid transparent;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.search_bar h2 {
+    font-size: 15px;
+    margin: 20px 10px;
+}
+
+.box_b {
+    border: 1px solid transparent;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    width: 150px;
+    background-color: #17A3D6;
+    border-radius: 3px;
+    margin-top: -18px;
+}
+
+.text h2 {
+    font-size: 18px;
+    color: #fff;
+    padding: 5px 0;
+    margin: 0;
+}
+
+.circle1 {
+    border: 1px solid transparent;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.2;
+    width: 40px;
+    background-color: #FF8266;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.glass {
+    color: #fff;
+}
+
+.main_menu {
+    background: linear-gradient( rgba(0, 0, 0, 0.4), /* Black color with 40% opacity */
+    rgba(0, 0, 0, 0.4)), url(../images/pexels-pixabay-290595.jpg);
+    /* filter: brightness(80%); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+    text-align: center;
+    z-index: -1;
+}
+
+.main_menu1 {
+    background: linear-gradient( rgba(0, 0, 0, 0.4), /* Black color with 40% opacity */
+    rgba(0, 0, 0, 0.4)), url(../images/pexels-el-evangelista-171946-1070345.jpg);
+    /* filter: brightness(80%); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+    text-align: center;
+    z-index: -1;
+}
+
+.main_menu1 h1 {
+    padding-top: 80px;
+    position: relative;
+    color: #CBCED3;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: "Oswald", sans-serif;
+}
+
+.main_menu1 h5 {
+    line-height: 1.2;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+.main_menu h1 {
+    padding-top: 80px;
+    position: relative;
+    color: #CBCED3;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: "Oswald", sans-serif;
+}
+
+.main_menu h5 {
+    line-height: 1.2;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+.main_menu2 {
+    background: linear-gradient( rgba(0, 0, 0, 0.4), /* Black color with 40% opacity */
+    rgba(0, 0, 0, 0.4)), url(../images/pexels-steve-6205266.jpg);
+    /* filter: brightness(80%); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+    text-align: center;
+    z-index: -1;
+}
+
+.main_menu2 h1 {
+    padding-top: 80px;
+    position: relative;
+    color: #CBCED3;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: "Oswald", sans-serif;
+}
+
+.main_menu2 h5 {
+    line-height: 1.2;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+.copys:focus {
+    background-color: #2E3E4E !important;
+}
+
+.copys {
+    padding: 20px 50px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 0;
+    object-fit: cover;
+    color: #FEEBCB;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.box {
+    border: 1px solid #000;
+    height: 30px;
+    width: 30px;
+}
+
+.main_card {
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+.circle_icon {
+    border: 1px solid transparent;
+    height: 105px;
+    width: 105px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #17A3D6;
+}
+
+.laptop {
+    font-size: 50px;
+    color: #fff;
+}
+
+.main_card h2 {
+    color: #000;
+    font-size: 16px;
+    word-spacing: 2px;
+    font-weight: 700;
+    font-family: "Merriweather", serif;
+}
+
+.main_card p {
+    color: gray;
+    font-size: 12px;
+    margin: 0 15px;
+    padding: 0;
+    font-weight: 600;
+}
+
+.main_card span a {
+    color: #17A3D6;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.main_card1 {
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+.main_card1 h2 {
+    color: #000;
+    font-size: 16px;
+    word-spacing: 2px;
+    font-weight: bold;
+    font-family: "Merriweather", serif;
+}
+
+.main_card1 p {
+    color: gray;
+    font-size: 12px;
+    margin: 0;
+    padding: 0 12px;
+    font-weight: 600;
+}
+
+.main_card1 span a {
+    color: #17A3D6;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.color_div {
+    background-color: #2E3E4E;
+    margin: 20px;
+    padding: 10px 0;
+}
+
+.account h1 a {
+    text-decoration: none;
+    color: #F28566;
+    font-size: 28px;
+    margin: 10px 10px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+}
+
+.account {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+.works {
+    border: 1px solid transparent;
+    text-align: center;
+    color: #fff;
+    padding: 0px 10px;
+    height: 40px;
+    background-color: #17A3D6;
+    margin-right: 11px;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 1px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.box1 p {
+    font-size: 14px;
+    padding: 0;
+    margin: 0 0px;
+    color: #fff;
+}
+
+.box1 h2 a {
+    font-size: 20px;
+    color: #F28566;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.box1 img {
+    border: 1px solid #fff;
+    text-align: center;
+    object-fit: cover;
+    width: 100%;
+    height: 40vh;
+    border: 10px solid #fff;
+}
+
+.works:hover,
+.works:focus {
+    border: 1px solid transparent !important;
+    color: #fff !important;
+    background-color: #FF8266!important;
+    transition: ease 0.4s !important;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.text_center h1 {
+    color: #17A3D6;
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+}
+
+.text_center h3 {
+    font-size: 13px;
+    word-spacing: 1px;
+    padding: 5px 197px;
+}
+
+.main_box h2 {
+    font-size: 20px;
+    color: #17A3D6;
+    margin-top: 25px;
+}
+
+.main_box {
+    padding: 0 10px;
+}
+
+.main_box h3 {
+    font-size: 12px;
+    border: 1px solid transparent;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    padding: 0;
+    margin: 0;
+}
+
+.box_button {
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: #17A3D6;
+    float: right;
+    padding: 3px 10px;
+    transition: ease-out 0.5s;
+    margin-top: 10px;
+}
+
+.box_button:hover,
+.box_button:focus {
+    color: #eee !important;
+    background-color: #17A3D6;
+    border: 1px solid transparent !important;
+    box-shadow: inset 10px 10px 65px -15px rgb(0, 119, 255);
+}
+
+.main_box1 {
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.main_box1 h2 {
+    font-size: 30px;
+    margin-top: 25px;
+    color: #17A3D6;
+    font-family: "Oswald", sans-serif;
+}
+
+.main_box1 h3 {
+    font-size: 20px;
+    margin: 20px auto;
+    width: 80%;
+    font-weight: 700;
+}
+
+.main_box1 h4 {
+    font-size: 15px;
+    color: #FF8266;
+    margin-top: 40px;
+}
+
+.main_cicle {
+    border: 1px solid transparent;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle_profile {
+    position: relative;
+    padding: 0 5px;
+}
+
+.men {
+    font-size: 70px;
+    margin: 35px 0;
+    color: #B3B3B3;
+    margin-top: 20px;
+}
+
+.men:hover {
+    color: #F58560;
+    transition: ease 0.4s;
+}
+
+.men::after {
+    position: absolute;
+    content: "";
+    border: 1px solid transparent;
+    height: 5px;
+    width: 62px;
+    top: 122px;
+    right: 6px;
+    background: #B3B3B3;
+    transition: ease 0.5s;
+}
+
+.box_3 {
+    border-bottom: 1px solid #ededed;
+    padding: 5px 0;
+}
+
+.men:hover:after {
+    background: #F58560;
+    height: 12px;
+    top: 115px;
+    transition: ease 0.5s;
+}
+
+.last_box {
+    background-color: #2E3E4E;
+}
+
+.main_last {
+    padding: 0 10px;
+}
+
+.main_last h2 a {
+    font-size: 25px;
+    color: #F58560;
+    text-decoration: none;
+}
+
+.main_last h2 {
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #F58560;
+}
+
+.main_last h3 {
+    font-size: 12px;
+    color: #B5B5B5;
+    margin: 2px 0;
+}
+
+.bottom {
+    border-bottom: 1px solid gray;
+    padding: 25px 0;
+}
+
+.main_last h4 a {
+    font-size: 13px;
+    padding: 0;
+    text-decoration: none;
+    margin: 0;
+    color: #1AAEC8;
+}
+
+.main_last h4 {
+    padding: 0;
+    font-size: 13px;
+    color: #1AAEC8;
+    margin: 0;
+}
+
+.border_1 {
+    border-bottom: 1px solid #B5B5B5;
+    padding: 0px 0;
+}
+
+.border_2 {
+    border-bottom: 1px solid #B5B5B5;
+    padding: 0px 0;
+}
+
+.barr {
+    margin-top: 15px;
+}
+
+.button2 {
+    height: auto;
+    color: #fff;
+    background-color: #17A3D6;
+    border: 1px solid transparent;
+    margin: 10px 0;
+    float: right;
+}
+
+.button2:hover {
+    color: #000;
+    background-color: aliceblue;
+    border: 1px solid transparent;
+    transition: ease 0.3s;
+}
+
+.images {
+    border: 1px solid transparent;
+    height: 50px;
+    width: 50px;
+}
+
+.images img {
+    border: 1px solid transparent;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.phone {
+    color: #17A3D6;
+    font-size: 40px;
+}
+
+.footer_text h3 {
+    line-height: 1.5;
+}
+
+.footer_text {
+    border-bottom: 1px solid white;
+}
+
+@media (min-width:375px) and (max-width:667px) {
+    .main_menu {
+        background: linear-gradient( rgba(0, 0, 0, 0.4), /* Black color with 40% opacity */
+        rgba(0, 0, 0, 0.4)), url(../images/pexels-pixabay-290595.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+        width: 100%;
+        object-fit: cover;
+        text-align: center;
+    }
+    .account h1 a {
+        font-size: 15px;
+        font-weight: 800;
+    }
+    .main_card p {
+        margin: 0;
+        padding: 0;
+    }
+    .main_card1 p {
+        margin: 0;
+        padding: 0;
+    }
+    .works {
+        line-height: 1;
+        margin: 0;
+        height: 42px;
+        padding: 0 5px;
+        font-size: 15px;
+    }
+    .main_menu1 {
+        background: linear-gradient( rgba(0, 0, 0, 0.4), /* Black color with 40% opacity */
+        rgba(0, 0, 0, 0.4)), url(../images/pexels-el-evangelista-171946-1070345.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+        width: 100%;
+        object-fit: cover;
+        text-align: center;
+    }
+    .main_menu2 {
+        background: linear-gradient( rgba(0, 0, 0, 0.4), /* Black color with 40% opacity */
+        rgba(0, 0, 0, 0.4)), url(../images/pexels-steve-6205266.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20vh;
+        width: 100%;
+        object-fit: cover;
+        text-align: center;
+    }
+    .main_menu h1 {
+        padding-top: 80px;
+        color: #CCCECD;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .main_menu h5 {
+        line-height: 1;
+        color: #fff;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .copys {
+        padding: 20px 60px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 0;
+        object-fit: cover;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .main_menu2 h1 {
+        padding-top: 80px;
+        color: #CCCECD;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .main_menu2 h5 {
+        line-height: 1;
+        color: #fff;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .copys {
+        padding: 20px 60px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 0;
+        object-fit: cover;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .box1 img {
+        border: 1px solid #fff;
+        text-align: center;
+        object-fit: cover;
+        width: 100%;
+        height: 30vh;
+        border: 10px solid #fff;
+    }
+    .text_center h3 {
+        font-size: 15px;
+        word-spacing: 1px;
+        padding: 5px 20px;
+    }
+    .carousel-indicators {
+        margin-right: 9%;
+    }
+    .box1 h2 a {
+        font-size: 18px;
+    }
+    .bottom {
+        padding: 10px 0;
+    }
+}
+
+@media (min-width:375px) and (max-width:932px) {
+    .main_menu {
+        background-image: url(../images/pexels-pixabay-290595.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+        width: 100%;
+        object-fit: cover;
+        text-align: center;
+    }
+    .main_card1 p {
+        margin: 0;
+        padding: 0;
+    }
+    .main_card p {
+        margin: 0;
+        padding: 0;
+    }
+    .account h1 a {
+        font-size: 15px;
+        font-weight: 800;
+    }
+    .main_menu1 {
+        background: linear-gradient( rgba(0, 0, 0, 0.4), /* Black color with 40% opacity */
+        rgba(0, 0, 0, 0.4)), url(../images/pexels-el-evangelista-171946-1070345.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+        width: 100%;
+        object-fit: cover;
+        text-align: center;
+    }
+    .main_menu2 {
+        background: linear-gradient( rgba(0, 0, 0, 0.4), /* Black color with 40% opacity */
+        rgba(0, 0, 0, 0.4)), url(../images/pexels-steve-6205266.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20vh;
+        width: 100%;
+        object-fit: cover;
+        text-align: center;
+    }
+    .works {
+        line-height: 1;
+        margin: 0;
+        height: 42px;
+        padding: 0 5px;
+        font-size: 15px;
+    }
+    .main_menu h1 {
+        padding-top: 80px;
+        color: #CCCECD;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .main_menu h5 {
+        line-height: 1;
+        color: #fff;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .main_menu2 h1 {
+        padding-top: 80px;
+        color: #CCCECD;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .main_menu2 h5 {
+        line-height: 1;
+        color: #fff;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .copys {
+        padding: 20px 60px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 0;
+        object-fit: cover;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .text_center h3 {
+        font-size: 15px;
+        word-spacing: 1px;
+        padding: 5px 20px;
+    }
+    .box1 img {
+        border: 1px solid #fff;
+        text-align: center;
+        object-fit: cover;
+        width: 100%;
+        height: 30vh;
+        border: 10px solid #fff;
+    }
+    .carousel-indicators {
+        margin-right: 9%;
+    }
+    .brand_logo h2 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .circle {
+        font-size: 20px;
+        color: #F3815D;
+        margin-top: 0px;
+        padding: 0 2px;
+        margin-left: 20px;
+    }
+    .square {
+        font-size: 20px;
+        color: #1AAEC8;
+        padding: 0 2px;
+        margin-top: 0px;
+        margin-right: 3px;
+    }
+    .box1 h2 a {
+        font-size: 18px;
+    }
+    .bottom {
+        padding: 10px 0;
+    }
+}
+
+@media (min-width:412px) and (max-width:915px) {
+    .main_menu {
+        background-image: url(../images/pexels-pixabay-290595.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40vh;
+        width: 100%;
+        object-fit: cover;
+        text-align: center;
+    }
+    .account h1 a {
+        font-size: 15px;
+        font-weight: 800;
+    }
+    .main_card1 p {
+        margin: 0;
+        padding: 0;
+    }
+    .main_card p {
+        margin: 0;
+        padding: 0;
+    }
+    .main_menu2 {
+        background: linear-gradient( rgba(0, 0, 0, 0.4), /* Black color with 40% opacity */
+        rgba(0, 0, 0, 0.4)), url(../images/pexels-steve-6205266.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40vh;
+        width: 100%;
+        object-fit: cover;
+        text-align: center;
+    }
+    .main_menu1 {
+        background: linear-gradient( rgba(0, 0, 0, 0.4), /* Black color with 40% opacity */
+        rgba(0, 0, 0, 0.4)), url(../images/pexels-el-evangelista-171946-1070345.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40vh;
+        width: 100%;
+        object-fit: cover;
+        text-align: center;
+    }
+    .works {
+        line-height: 1;
+        margin: 0;
+        height: 42px;
+        padding: 0 5px;
+        font-size: 15px;
+    }
+    .main_menu h1 {
+        padding-top: 80px;
+        color: #CCCECD;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .main_menu h5 {
+        line-height: 1;
+        color: #fff;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .main_menu2 h1 {
+        padding-top: 80px;
+        color: #CCCECD;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .main_menu2 h5 {
+        line-height: 1;
+        color: #fff;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .copys {
+        padding: 20px 60px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 0;
+        object-fit: cover;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .brand_logo h2 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .text_center h3 {
+        font-size: 15px;
+        word-spacing: 1px;
+        padding: 5px 20px;
+    }
+    .circle {
+        font-size: 20px;
+        color: #F3815D;
+        margin-top: 5px;
+        padding: 0 2px;
+        margin-left: 20px;
+    }
+    .square {
+        font-size: 20px;
+        color: #1AAEC8;
+        padding: 0 2px;
+        margin-top: 5px;
+        margin-right: 3px;
+    }
+    .account h1 a {
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+        font-weight: 800;
+    }
+    .carousel-indicators {
+        margin-right: 9%;
+    }
+    .box1 img {
+        border: 1px solid #fff;
+        text-align: center;
+        object-fit: cover;
+        width: 100%;
+        height: 25vh;
+        border: 10px solid #fff;
+    }
+    .box1 h2 a {
+        font-size: 18px;
+    }
+    .bottom {
+        padding: 10px 0;
+    }
+}
+
+@media (min-width:360px) and (max-width:740px) {
+    .main_menu {
+        background-image: url(../images/pexels-pixabay-290595.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+        width: 100%;
+        object-fit: cover;
+        text-align: center;
+    }
+    .main_card1 p {
+        margin: 0;
+        padding: 0;
+    }
+    .main_card p {
+        margin: 0;
+        padding: 0;
+    }
+    .main_menu2 {
+        background: linear-gradient( rgba(0, 0, 0, 0.4), /* Black color with 40% opacity */
+        rgba(0, 0, 0, 0.4)), url(../images/pexels-steve-6205266.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+        width: 100%;
+        object-fit: cover;
+        text-align: center;
+    }
+    .main_menu h1 {
+        padding-top: 80px;
+        color: #CCCECD;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .main_menu h5 {
+        line-height: 1;
+        color: #fff;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .main_menu2 h1 {
+        padding-top: 80px;
+        color: #CCCECD;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .main_menu2 h5 {
+        line-height: 1;
+        color: #fff;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .main_menu1 {
+        background: linear-gradient( rgba(0, 0, 0, 0.4), /* Black color with 40% opacity */
+        rgba(0, 0, 0, 0.4)), url(../images/pexels-el-evangelista-171946-1070345.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+        width: 100%;
+        object-fit: cover;
+        text-align: center;
+    }
+    .main_menu1 h1 {
+        padding-top: 80px;
+        color: #CCCECD;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .main_card1 p {
+        margin: 0;
+        padding: 0;
+    }
+    .main_menu1 h5 {
+        line-height: 1;
+        color: #fff;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .works {
+        line-height: 1;
+        margin: 0;
+        height: 42px;
+        padding: 0 5px;
+        font-size: 15px;
+    }
+    .copys {
+        padding: 20px 60px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 0;
+        object-fit: cover;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .text_center h3 {
+        font-size: 15px;
+        word-spacing: 1px;
+        padding: 5px 20px;
+    }
+    .brand_logo h2 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .box1 img {
+        border: 1px solid #fff;
+        text-align: center;
+        object-fit: cover;
+        width: 100%;
+        height: 25vh;
+        border: 10px solid #fff;
+    }
+    .circle {
+        font-size: 20px;
+        color: #F3815D;
+        margin-top: 5px;
+        padding: 0 2px;
+        margin-left: 20px;
+    }
+    .carousel-indicators {
+        margin-right: 9%;
+    }
+    .box1 h2 a {
+        font-size: 18px;
+    }
+    .square {
+        font-size: 20px;
+        color: #1AAEC8;
+        padding: 0 2px;
+        margin-top: 5px;
+        margin-right: 3px;
+    }
+    .bottom {
+        padding: 10px 0;
+    }
+}
+
+@media (min-width:412px) and (max-width:915px) {
+    .main_menu {
+        background-image: url(../images/pexels-pixabay-290595.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40vh;
+        width: 100%;
+        object-fit: cover;
+        text-align: center;
+    }
+    .main_card1 p {
+        margin: 0;
+        padding: 0;
+    }
+    .main_card p {
+        margin: 0;
+        padding: 0;
+    }
+    .main_menu2 {
+        background: linear-gradient( rgba(0, 0, 0, 0.4), /* Black color with 40% opacity */
+        rgba(0, 0, 0, 0.4)), url(../images/pexels-steve-6205266.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40vh;
+        width: 100%;
+        object-fit: cover;
+        text-align: center;
+    }
+    .main_menu1 {
+        background: linear-gradient( rgba(0, 0, 0, 0.4), /* Black color with 40% opacity */
+        rgba(0, 0, 0, 0.4)), url(../images/pexels-el-evangelista-171946-1070345.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40vh;
+        width: 100%;
+        object-fit: cover;
+        text-align: center;
+    }
+    .brand_logo h2 {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .works {
+        line-height: 1;
+        margin: 0;
+        height: 42px;
+        padding: 0 5px;
+        font-size: 15px;
+    }
+    .text_center h3 {
+        font-size: 15px;
+        word-spacing: 1px;
+        padding: 5px 20px;
+    }
+    .circle {
+        font-size: 20px;
+        color: #F3815D;
+        margin-top: 5px;
+        padding: 0 2px;
+        margin-left: 60px;
+    }
+    .square {
+        font-size: 20px;
+        color: #1AAEC8;
+        padding: 0 2px;
+        margin-top: 5px;
+        margin-right: 3px;
+    }
+    .carousel-indicators {
+        margin-right: 9%;
+    }
+    .box1 h2 a {
+        font-size: 18px;
+    }
+    .box1 img {
+        border: 1px solid #fff;
+        text-align: center;
+        object-fit: cover;
+        width: 100%;
+        height: 25vh;
+        border: 10px solid #fff;
+    }
+    .bottom {
+        padding: 10px 0;
+    }
+}
+
+@media (min-width:820px) and (max-width:1180px) {
+    .main_menu {
+        background-image: url(../images/pexels-pixabay-290595.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30vh;
+        width: 100%;
+        object-fit: cover;
+        text-align: center;
+    }
+    .account h1 a {
+        font-size: 30px;
+        font-weight: 800;
+    }
+    .box1 h2 a {
+        font-size: 18px;
+    }
+    .main_card1 p {
+        margin: 0;
+        padding: 0;
+    }
+    .main_menu2 {
+        background: linear-gradient( rgba(0, 0, 0, 0.4), /* Black color with 40% opacity */
+        rgba(0, 0, 0, 0.4)), url(../images/pexels-steve-6205266.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30vh;
+        width: 100%;
+        object-fit: cover;
+        text-align: center;
+    }
+    .main_card p {
+        margin: 0;
+        padding: 0;
+    }
+    .main_menu1 {
+        background: linear-gradient( rgba(0, 0, 0, 0.4), /* Black color with 40% opacity */
+        rgba(0, 0, 0, 0.4)), url(../images/pexels-el-evangelista-171946-1070345.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30vh;
+        width: 100%;
+        object-fit: cover;
+        text-align: center;
+    }
+    .brand_logo h2 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .text_center h3 {
+        font-size: 15px;
+        word-spacing: 1px;
+        padding: 5px 20px;
+    }
+    .box1 img {
+        border: 1px solid #fff;
+        text-align: center;
+        object-fit: cover;
+        width: 100%;
+        height: 17vh;
+        border: 10px solid #fff;
+    }
+    .works {
+        line-height: 1;
+        margin: 0;
+        height: 42px;
+        padding: 0 5px;
+        font-size: 15px;
+    }
+    .circle {
+        font-size: 20px;
+        color: #F3815D;
+        margin-top: 5px;
+        padding: 0 2px;
+        margin-left: 20px;
+    }
+    .square {
+        font-size: 20px;
+        color: #1AAEC8;
+        padding: 0 2px;
+        margin-top: 5px;
+        margin-right: 3px;
+    }
+    .carousel-indicators {
+        margin-right: 9%;
+    }
+    .bottom {
+        padding: 10px 0;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .account h1 a {
+        font-size: 30px;
+        font-weight: 800;
+    }
+}
+
+.body {
+    background-color: #000;
+}
+
+.head {
+    background-color: #000;
+}
+
+.head h5 {
+    color: #fff;
+}
+
+.offcanvas_but {
+    background-color: #000 !important;
+    color: #fff !important;
+    box-shadow: none;
+}
+
+.Blog2 {
+    color: #fff;
+    background-color: #F28566;
+    border: 1px solid transparent;
+}
+
+.offcanvas_but:hover,
+.offcanvas_but:focus {
+    background-color: #000 !important;
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+.carousel-control-prev-icon {
+    display: none;
+}
+
+.carousel-control-next-icon {
+    display: none;
+}
+
+.carousel-indicators {
+    justify-content: end !important;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px !important;
+    border-radius: 50%;
+    height: 12px !important;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: #4147ff !important;
+    box-sizing: border-box !important;
+    position: relative;
+}
+
+.carousel-indicators .active::after {
+    border: 2px solid #F58560 !important;
+    position: absolute;
+    height: 12px !important;
+    width: 12px !important;
+    justify-content: end;
+    display: flex;
+    border-radius: 50%;
+    top: 0;
+    content: "";
+}
+
+.carousel-indicators [data-bs-target] {
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+}
+
+.btn-close {
+    background-color: #F58560;
+    color: #fff !important;
+}
